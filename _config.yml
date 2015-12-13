@@ -1,0 +1,33 @@
+
+title: The блог # наименование блога
+author: "Enver Osmanov"
+encoding: UTF-8 # кодировка
+
+# При выводе всех постов на одной странице
+# используем постраничный вывод
+paginate: 6
+
+# paginate_path: 'page:num'
+
+# Если постраничный вывод не нужен
+
+baseurl: ""
+# Путь к постам
+# в примере SiteName/posts/PostName
+
+permalink: /posts/:title
+# paginate: 5
+gems: [jekyll-paginate]
+
+# Использование тегов для постов
+# с плагином jekyll-tagging: https://github.com/pattex/jekyll-tagging
+tag_page_layout: tag_page
+tag_page_dir: tags
+
+# можно изменить место дислокации
+# выходных файлов
+destination: public
+
+# при локальной настройке
+# следует указать localhost
+url: http://localhost:4000
